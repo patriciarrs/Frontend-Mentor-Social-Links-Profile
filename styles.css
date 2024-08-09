@@ -15,7 +15,70 @@ html {
 }
 
 .body {
+  background-color: var(--grey900);
   font-family: Inter, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--grey800);
+  border-radius: 20px;
+  margin: auto;
+  padding: 2.4rem;
+  width: 32rem;
+}
+
+.picture {
+  border-radius: 50%;
+  display: block;
+  height: 10rem;
+  margin: auto;
+}
+
+.name {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 1.2rem 0;
+}
+
+.location {
+  color: var(--green);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.quote {
+  color: var(--white);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.link {
+  background-color: var(--grey700);
+  border-radius: 4px;
+  color: var(--white);
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1.2rem 0;
+  padding: 1.2rem 0;
+  text-decoration: none;
+}
+
+.footer {
+  color: var(--white);
+  font-style: italic;
+  width: 100%;
 }
 
 .attribution {
