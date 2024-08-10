@@ -17,6 +17,8 @@ html {
 .body {
   background-color: var(--grey900);
   font-family: Inter, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
   margin: 0;
   min-height: 100vh;
   text-align: center;
@@ -26,53 +28,61 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 0 2.4rem;
 }
 
 .card {
   background-color: var(--grey800);
-  border-radius: 20px;
+  border-radius: 12px;
   margin: auto;
-  padding: 2.4rem;
-  width: 32rem;
+  max-width: 45.6rem;
+  padding: clamp(2.4rem, 0.873rem + 4.071vw, 4rem);
+  width: 100%;
 }
 
 .picture {
   border-radius: 50%;
   display: block;
-  height: 10rem;
-  margin: auto;
+  height: 8.8rem;
+  margin: 0 auto 2.4rem;
 }
 
 .name {
   color: var(--white);
   font-size: 2.4rem;
-  font-weight: 700;
-  margin: 1.2rem 0;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
 }
 
 .location {
   color: var(--green);
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
 .quote {
   color: var(--white);
-  font-size: 1.4rem;
-  margin: 0;
+  margin: 2.4rem 0;
 }
 
 .link {
   background-color: var(--grey700);
-  border-radius: 4px;
+  border-radius: 8px;
   color: var(--white);
+  cursor: pointer;
   display: block;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 1.2rem 0;
+  font-weight: 700;
   padding: 1.2rem 0;
   text-decoration: none;
+}
+
+.link:not(:last-child) {
+  margin: 0 0 1.6rem;
+}
+
+.link:hover {
+  background-color: var(--green);
+  color: var(--grey700);
 }
 
 .footer {
@@ -88,4 +98,10 @@ html {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 769px) {
+  .card {
+    max-width: 38.4rem;
+  }
 }
