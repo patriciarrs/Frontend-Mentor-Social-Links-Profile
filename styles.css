@@ -80,7 +80,9 @@ html {
   margin: 0 0 1.6rem;
 }
 
-.link:hover {
+.link:hover,
+.link:active,
+.link:focus {
   background-color: var(--green);
   color: var(--grey700);
 }
