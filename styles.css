@@ -16,7 +16,7 @@ html {
 
 .body {
   background-color: var(--grey900);
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;
@@ -45,6 +45,7 @@ html {
   display: block;
   height: 8.8rem;
   margin: 0 auto 2.4rem;
+  max-width: 100%;
 }
 
 .name {
