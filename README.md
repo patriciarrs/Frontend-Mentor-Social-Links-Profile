@@ -54,7 +54,6 @@ Mobile-first design is an approach to designing UIs that prioritizes small-scree
 #### CSS media queries
 
 I used media queries to handle cases where I needed to apply CSS styles depending on screen resolution.
-Example:
 
 ```css
 @media (min-width: 769px) {
